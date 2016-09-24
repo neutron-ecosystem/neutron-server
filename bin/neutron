@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+'use strict';
+
+const path = require('path');
+const fs = require('fs');
+
+const index = path.dirname(fs.realpathSync(__filename));
+const cli = path.join(index, '..');
+
+require(cli)();
